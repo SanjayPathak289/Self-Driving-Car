@@ -4,6 +4,7 @@ class Controls {
         this.left = false;
         this.right = false;
         this.reverse = false;
+
         switch (type) {
             case "KEYS":
                 this.#addKeyboardListeners();
@@ -13,11 +14,12 @@ class Controls {
                 break;
         }
     }
+
     #addKeyboardListeners() {
         document.onkeydown = (event) => {
             switch (event.key) {
                 case "ArrowLeft":
-                    this.left = true; //without arrow function this will refer to function not object this
+                    this.left = true;
                     break;
                 case "ArrowRight":
                     this.right = true;

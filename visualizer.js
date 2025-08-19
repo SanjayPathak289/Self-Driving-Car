@@ -1,3 +1,4 @@
+
 class Visualizer {
     static drawNetwork(ctx, network) {
         const margin = 50;
